@@ -1,0 +1,48 @@
+/*========================================*/
+//  Posts Page SCSS
+//  
+//  Uses this SCSS module for the posts/articles/events
+//  
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* =============================== */
+/* ===== Posts/Articles Pages ===== */
+/* =============================== */
+.articlePage{
+	article{
+		box-shadow: $niceShadow;
+		
+		border: $border1;
+	}
+	.articleMetaData{
+		background-color: $primaryColor;
+		color: $secondaryColor;
+		padding: $clampMedium;
+	}
+	.articleContent{
+		padding: $clampMedium;
+
+		hr{
+			margin: $clampMedium 0 $clampLarge;
+		}
+		p{
+			margin-bottom: $clampLarge;
+			//negate margin between <p>s and <ul>s
+			&+ul{
+				margin-top: calc(-1 * #{$clampLarge});
+			}
+		}
+		ul{
+			margin: 0 0 $clampLarge;
+			ul{
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+

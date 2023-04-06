@@ -1,0 +1,22 @@
+@import "@styles/vars.module.scss";
+
+.footer{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 15px 35px;
+	width:100%;
+	max-width: 1650px;
+	margin: auto;
+	margin-top: 50px;
+
+	.logo{
+		padding: 5px;
+	}
+
+	.social{
+		margin-left: 50px;
+		position: relative;
+		bottom: -7px;
+	}
+}

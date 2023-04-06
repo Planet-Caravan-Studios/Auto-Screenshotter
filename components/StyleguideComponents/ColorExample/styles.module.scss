@@ -1,0 +1,42 @@
+/*========================================*/
+//	MasterComponent
+//	
+//	Clone this component out to make 
+//	new components.
+//	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* ========================= */
+/* ===== Main Component ===== */
+/* ========================= */
+.ColorExample{
+	width: 100%;
+	max-width: 300px;
+	aspect-ratio: 1/1;
+	padding: 1em;
+	background-color: $black;
+	color: $white;
+	p{
+		margin-bottom: 0em !important;
+	}
+	hr{
+		background-color: $white;;
+	}
+
+	//text color for light colors
+	&[data-color="$lightGrey"]{
+		color: $black;
+	}
+}
+
+/* ======================== */
+/* ===== Sub Component ===== */
+/* ======================== */
+.SubComponent{
+	
+}

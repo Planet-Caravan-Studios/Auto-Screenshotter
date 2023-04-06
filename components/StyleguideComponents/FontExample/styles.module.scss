@@ -1,0 +1,64 @@
+/*========================================*/
+//	MasterComponent
+//	
+//	Clone this component out to make 
+//	new components.
+//	
+/*========================================*/
+
+/* ================== */
+/* ===== Imports ===== */
+/* ================== */
+@import "@styles/vars.module.scss";
+
+/* ========================= */
+/* ===== Main Component ===== */
+/* ========================= */
+.FontExample{
+	width:  300px;
+	max-width: 100%;
+	//aspect-ratio: 1/1;
+	font-family: $fontBody;
+	font-size: $fontSizeBody;
+	padding: 15px;
+	border: dashed 2px $primaryColor;
+	
+	/* ===== Fonts ===== */
+	&[data-font="body"]{
+		font-family: $fontBody;
+	}
+	&[data-font="alt"]{
+		font-family: $fontAlt;	
+	}
+	&[data-font="display"]{
+		font-family: $fontDisplay;
+	}
+
+	/* ===== Font Sizes ===== */
+	&[data-font-size="detail"]{
+		font-size: $fontSizeDetail;
+	}
+	&[data-font-size="body"]{
+		font-size: $fontSizeBody;
+	}
+	&[data-font-size="subhead"]{
+		font-size: $fontSizeSubhead;
+	}
+	&[data-font-size="heading"]{
+		font-size: $fontSizeHeading;
+	}
+
+	.fontMeta{
+		font-size: $fontSizeDetail;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* ======================== */
+/* ===== Sub Component ===== */
+/* ======================== */
+.SubComponent{
+	
+}
