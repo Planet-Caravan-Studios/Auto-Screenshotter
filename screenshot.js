@@ -9,10 +9,19 @@ if (!fileName) {
     throw "Please provide fileName as the second argument";
 }
 async function run () {
+    //Launch browser
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+
+    //Navigate to page
+    await page.goto(url);
+    await page.emulateMediaType('screen');
+    await page.reload({waitUntil: 'networkidle2'})
+
     //Wait to make sure everything is loaded
     await page.waitForTimeout((delay || 5000));
+
+    //Set screen size
     await page.setViewport({
       width: 1800,
       height: 780,
