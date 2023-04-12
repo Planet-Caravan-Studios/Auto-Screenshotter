@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer');
 const url = process.argv[2];
 const fileName = process.argv[3];
+const delay = process.argv[4];
 if (!url) {
     throw "Please provide URL as the first argument";
 }
@@ -10,6 +11,8 @@ if (!fileName) {
 async function run () {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
+    //Wait to make sure everything is loaded
+    await page.waitForTimeout((delay || 5000));
     await page.setViewport({
       width: 1800,
       height: 780,
