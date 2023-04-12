@@ -27,11 +27,14 @@ async function run () {
       height: 780,
       deviceScaleFactor: 1,
     });
-    await page.goto(url);
+    
+    //Take screenshot
     await page.screenshot({
     	path: 'screenshot-files/' + fileName + '.png', 
     	fullPage: true,
     });
+
+    //Close session
     browser.close();
 }
 run();
