@@ -1,12 +1,13 @@
 {
   "name": "Auto-Screenshotter",
   "version": "0.0.1",
-  "license": "MIT" ,
-  "scripts": { 
-    "clean": "rmdir /s screenshot-files && md screenshot-files", 
-    "test": "standard" 
-  } ,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rmdir /s screenshot-files && md screenshot-files",
+    "test": "standard"
+  },
   "dependencies": {
+    "jspdf": "^2.5.1",
     "puppeteer": "^19.8.5"
   }
 }
