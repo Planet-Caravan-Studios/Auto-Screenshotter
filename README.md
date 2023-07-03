@@ -1,5 +1,7 @@
 # README
 
+This command line tool is still in development and is very basic.  It may not work on every site and may need to be adjusted to account for things like load times or lazy-loaded images.
+
 ## Command Syntax:
 - `node screenshot.js https://test.com fileName delay`
 
@@ -10,6 +12,7 @@
 ---
 
 ## In-Progress - Not Ready For Use
+Everything below this point is either in-progress or notes for future updates.  Do not reference this section when using the tool.
 
 ## To Do:
 - Progress bar: https://www.npmjs.com/package/cli-progress
